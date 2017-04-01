@@ -1,4 +1,4 @@
-#Personal Vim setup
+# Personal Vim setup
 
 ## Installation 
 
