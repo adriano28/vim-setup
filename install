@@ -11,3 +11,6 @@ ln -s ~/.vim/vim-config/vimrc ~/.vimrc
 
 # Step 5: Install all the plugins
 vim +PluginInstall +qall
+
+# Step 6: copy brogrammer colorscheme to colors folder
+cp brogrammer.vim ~/.vim/colorscheme
