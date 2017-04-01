@@ -7,7 +7,7 @@ git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 [ -f ~/.vimrc ]  && mv -i ~/.vimrc{,.bak}
 
 # Step 3: Create symlink for new vim configuration
-ln -s ~/.vim/vim-config/vimrc ~/.vimrc
+ln -s ~/.vim/vim-setup/vimrc ~/.vimrc
 
 # Step 5: Install all the plugins
 vim +PluginInstall +qall
