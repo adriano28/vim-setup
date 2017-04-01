@@ -1,0 +1,13 @@
+#!/bin/bash
+
+# Step 1: checkout Vundle
+git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+
+# Step 2: Backup old vim configuration
+[ -f ~/.vimrc ]  && mv -i ~/.vimrc{,.bak}
+
+# Step 3: Create symlink for new vim configuration
+ln -s ~/.vim/vim-config/vimrc ~/.vimrc
+
+# Step 5: Install all the plugins
+vim +PluginInstall +qall
