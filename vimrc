@@ -80,6 +80,8 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'chriskempson/base16-vim'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'lambdatoast/elm.vim'
+Plugin 'leafgarland/typescript-vim'
+Plugin 'jelera/vim-javascript-syntax'
 
 call vundle#end()
 filetype plugin indent on
@@ -135,6 +137,10 @@ set listchars=tab:=»,trail:·
 
 "Set Mapleader
 let g:mapleader = ","
+
+"vimgrep key map
+map <Leader>v :cnext<cr>
+map <Leader>C :cprevious<cr>
 
 map <Leader>, :NERDTreeToggle<cr>
 map <Leader>/  <plug>NERDCommenterToggle<cr>
